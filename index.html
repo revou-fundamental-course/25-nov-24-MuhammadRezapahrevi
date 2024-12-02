@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css\styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <!--Judul Web/Header-->
@@ -24,30 +24,34 @@
   <form>
     <div>
       <h4>Jenis Kelamin</h4>
-      <input type="radio" id="Pria" name="Jenis Kelamin"><label for="Pria">Pria</label>
-      <input type="radio" id="Wanita" name="Jenis Kelamin"><label for="Wanita">Wanita</label>
+      <fieldset>
+        <input type="radio" id="Pria" name="Jenis Kelamin">
+        <label for="Pria">Pria</label>
+        <input type="radio" id="Wanita" name="Jenis Kelamin">
+        <label for="Wanita">Wanita</label>
+      </fieldset>
     </div>
-      <div class="form-item">
+      <div class="from-item">
         <label for="berat-badan-input">
           Berat Badan (Kg)
-        <input id="berat-badan-input">
+        <input id="berat-badan-input" type="number" required>
         </label>
       </div>
-      <div class="form-item">
+      <div class="from-item">
         <label for="Usia-input">
           Usia (Tahun)
-        <input id="Usia-input">
+        <input id="Usia-input" type="number" required>
         </label>
       </div>
-      <div class="form-item">
+      <div class="from-item">
         <label for="tinggi-badan-input">
           Tinggi Badan (Cm)
-        <input id="tinggi-badan-input">
+        <input id="tinggi-badan-input" type="number" required>
         </label>
       </div>
     <div>
-      <button>Hitung BMI</button>
-      <button>Reset</button>
+      <button type="submit">Hitung BMI</button>
+      <button type="reset">Reset</button>
     </div>
   </form>
   <!--Sub article-->
@@ -76,14 +80,14 @@
       <div id="result-calculation">0</div>
       <p id="info-result">Anda Memiliki Berat Badan</p>
     </div>
-    <button>Download hasil BMI</button>
+    <button>Download Hasil BMI</button>
     <!--third article-->
-    <articele>
+    <article>
       <p>Hasil BMI diantara 23 dan 25</p>
-    </articele>
+    </article>
   </section>
   </main>
-  
+
   <!--Footer Web-->
   <footer>Made by Muhammadreza@2024</footer>
 </body>

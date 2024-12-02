@@ -4,7 +4,7 @@
 }
 main{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 form{
@@ -13,10 +13,11 @@ form{
     border-radius: 7px;
 }
 
-.form-item{
+.from-item{
   display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
 }
+
 footer{
   text-align: center;
 }
