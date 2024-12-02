@@ -1,0 +1,22 @@
+
+.main-header{
+  text-align: center;
+}
+main{
+  display: flex;
+  justify-content: space-around;
+}
+
+form{
+  background-color: lightgrey;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.form-item{
+  display: flex;
+  justify-content: space-between;
+}
+footer{
+  text-align: center;
+}

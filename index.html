@@ -8,48 +8,47 @@
 </head>
 <body>
   <!--Judul Web/Header-->
-  <header>
+  <header class="main-header">
     <h1>Kalkulator BMI</h1>
   </header>
-  <!--Section form kalkulator BMI-->
-  <section>
   <!--Konten Web-->
   <main>
-  <!--Main Article-->
-  <article>
-  <p>Berat badan idea adalah impian semua orang. Tidak hanya memiliki bentuk tubuh
-    yang menunjang penampilan, berat badan idea juga menandakan kondisi tubuh yang sehat. Bagai mana denganmu?
+<!--Section form kalkulator BMI-->
+<section>
+<article>
+  <p>Berat badan idea adalah impian semua orang.<br>Tidak hanya memiliki bentuk tubuh
+    yang menunjang penampilan,<br>berat badan idea juga menandakan kondisi tubuh yang sehat.<br>Bagai mana denganmu?
     Yuk, hitung sekarang dengan kalkulator BMI.
   </p>
   </article>
   <form>
-    <nav>
+    <div>
       <h4>Jenis Kelamin</h4>
       <input type="radio" id="Pria" name="Jenis Kelamin"><label for="Pria">Pria</label>
       <input type="radio" id="Wanita" name="Jenis Kelamin"><label for="Wanita">Wanita</label>
-    </nav>
-    <nav>
-      <label for="berat-badan-input">
-        Berat Badan (Kg)
-      <input id="berat-badan-input">
-      </label>
-    </nav>
-    <nav>
-      <label for="Usia-input">
-        Usia (Tahun)
-      <input id="Usia-input">
-      </label>
-    </nav>
-    <nav>
-      <label for="tinggi-badan-input">
-        Tinggi Badan (Cm)
-      <input id="tinggi-badan-input">
-      </label>
-    </nav>
-    <nav>
+    </div>
+      <div class="form-item">
+        <label for="berat-badan-input">
+          Berat Badan (Kg)
+        <input id="berat-badan-input">
+        </label>
+      </div>
+      <div class="form-item">
+        <label for="Usia-input">
+          Usia (Tahun)
+        <input id="Usia-input">
+        </label>
+      </div>
+      <div class="form-item">
+        <label for="tinggi-badan-input">
+          Tinggi Badan (Cm)
+        <input id="tinggi-badan-input">
+        </label>
+      </div>
+    <div>
       <button>Hitung BMI</button>
       <button>Reset</button>
-    </nav>
+    </div>
   </form>
   <!--Sub article-->
   <article>
@@ -61,31 +60,30 @@
       <li>Menentukan katagori berat badan idea atau tidak</li>
       <li>Mempersiapkan program penurunan berat badan</li>
     </ol>
-    <p>Kalkulator ini hanya digunakan oleh orang dewasa (wanita hamil dan menyusui tidak boleh
-      mengandalkan pembacaan BMI ini), dan tidak ada tindakan yang harus diambil berdasarkan nilainya
-      selain berkunsultasi dengan orang yang memenuhi syarat seperti dokter.
+    <p>Kalkulator ini hanya digunakan oleh orang dewasa<br>(wanita hamil dan menyusui tidak boleh
+      mengandalkan pembacaan BMI ini),<br>dan tidak ada tindakan yang harus diambil berdasarkan nilainya
+      <br>selain berkunsultasi dengan orang yang memenuhi syarat seperti dokter.
     </p>
   </article>
   </section>
   <!--Section hasil kalkulasi-->
   <section>
-    <nav>
+    <div>
       <header>
         <h3>Hasil</h3>
       </header>
       <p>Berat Badan Anda Berlebih</p>
       <div id="result-calculation">0</div>
       <p id="info-result">Anda Memiliki Berat Badan</p>
-    </nav>
+    </div>
     <button>Download hasil BMI</button>
     <!--third article-->
     <articele>
       <p>Hasil BMI diantara 23 dan 25</p>
     </articele>
-    
   </section>
   </main>
-
+  
   <!--Footer Web-->
   <footer>Made by Muhammadreza@2024</footer>
 </body>
