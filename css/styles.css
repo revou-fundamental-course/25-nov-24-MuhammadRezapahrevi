@@ -1,23 +1,36 @@
-
-.main-header{
+.main-header {
   text-align: center;
 }
-main{
+main {
   display: flex;
   justify-content: space-evenly;
 }
 
-form{
+form {
   background-color: lightgrey;
-    padding: 10px;
-    border-radius: 7px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-.from-item{
+.from-item {
   display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
-footer{
+footer {
   text-align: center;
+}
+
+.p2 {
+  line-height: 18px;
+  text-align: justify;
+}
+
+.hasil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:lightgray;
+  padding: 10px;
+  border-radius:10px;
 }
