@@ -10,43 +10,55 @@
     <nav class="container">
       <nav class="box">
         <h1>Kalkulator BMI</h1>
-        <nav class="content">
-          <nav class="input">
-            <label for="Umur">Umur (Tahun)</label>
-            <input type="text" class="text-input" id="Umur" autocomplete="off" required />
-          </nav>
-          <nav class="jeniskelamin">
-            <label class="container">
-              <input type="radio" name="radio" id="p" />
-              <p class="text">Pria</p>
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">
-              <input type="radio" name="radio" id="w" />
-              <p class="text">Wanita</p>
-              <span class="checkmark"></span>
-            </label>
-          </nav>
-          <nav class="contaonerHW">
-            <nav class="inputH">
-              <label for="tinggibadan">Tinggi Badan(cm)</label>
-              <input type="number" id="tinggibadan" required />
+        <from>
+          <nav class="content">
+            <nav class="input">
+              <label for="umur">Umur (Tahun)</label>
+              <input
+                type="text"
+                class="umur"
+                id="umur"
+                autocomplete="off"
+                required
+              />
             </nav>
-            <nav class="inputH">
-              <label for="beratbadan">Berat Badan(Kg)</label>
-              <input type="number" id="beratbadan" required />
+            <nav class="jeniskelamin">
+              <label class="container">
+                <input type="radio" name="radio" id="p" />
+                <p class="text">Pria</p>
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">
+                <input type="radio" name="radio" id="w" />
+                <p class="text">Wanita</p>
+                <span class="checkmark"></span>
+              </label>
             </nav>
+            <nav class="containerHW">
+              <nav class="inputH">
+                <label for="tinggibadan">Tinggi Badan(cm)</label>
+                <input type="number" id="tinggibadan" required />
+              </nav>
+              <nav class="inputH">
+                <label for="beratbadan">Berat Badan(Kg)</label>
+                <input type="number" id="beratbadan" required />
+              </nav>
+            </nav>
+            <button
+              class="hasilperhitungan"
+              id="submit"
+              onclick="getHasilPerhitungan();"
+            >
+              Hasil Perhitungan BMI
+            </button>
           </nav>
-          <button class="hasilperhitungan" id="submit" onclick="getHasilPerhitungan();">
-            Hasil Perhitungan BMI
-          </button>
-        </nav>
+        </from>
         <nav class="hasil">
           <p>Hasil Perhitungan</p>
           <nav id="hasil">00.00</nav>
           <p class="keterangan"></p>
         </nav>
-        <footer>by ahmad@2024</footer>
+        <footer>by mad@2024</footer>
       </nav>
     </nav>
     <script src="js/script_updated.js"></script>
