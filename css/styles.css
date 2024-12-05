@@ -1,36 +1,252 @@
-.main-header {
-  text-align: center;
-}
-main {
-  display: flex;
-  justify-content: space-evenly;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  }
+
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgba(165, 185, 174, 0.9);
+    }
+
+    .box{
+      width: 450px;
+      background: #fff;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 5px 5px 15px 10px rgba(0,0,0,0,8);
 }
 
-form {
-  background-color: lightgrey;
-  padding: 10px;
+hi{
+  color: rgba(0,0,0,0,10);
+  font-weight: bold;
+  font-size: 48px;
+  padding: 30px;
+}
+
+.content{
+  padding: 0 40px;
+}
+
+.input{
+  background:#fff;
+  box-shadow: 0px 0px 80px -25px rgba(0,0,0,0,20);
   border-radius: 10px;
+  padding: 15px 0;
+  margin-bottom: 25px;
 }
 
-.from-item {
-  display: flex;
-  justify-content: space-between;
+.input label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 15px;
 }
-
-footer {
+.input input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #39cb41;
+  width: 50%;
   text-align: center;
+  font-size: 28px;
+  font-family: "Nunito", sans-serif;
 }
 
-.p2 {
-  line-height: 18px;
-  text-align: justify;
+.inputW {
+  background: #fff;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.inputW label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+.inputW input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #39cb41;
+  width: 50%;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Nunito", sans-serif;
+}
+
+.inputH {
+  background: #fff;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.inputH label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+.inputH input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #39cb41;
+  width: 50%;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Nunito", sans-serif;
+}
+
+button.hasilperhitungan {
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  background: rgb(62, 159, 85);
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 12px 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  transition: all 0.5s;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+button.hasilperhitungan:hover {
+  background:#39cb41;
+}
+
+.jeniskelamin {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background: #fff;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 20px 0;
+  margin-bottom: 15px;
 }
 
 .hasil {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color:lightgray;
-  padding: 10px;
-  border-radius:10px;
+  padding: 10px 20px;
 }
+.hasil p {
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 15px;
+}
+.hasil #hasil {
+  font-size: 28px;
+  font-weight: 900;
+  color: #285847;
+  background-color: #eaeaea;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 35px;
+  margin-bottom: 25px;
+}
+#keterangan {
+  color: #285847;
+  font-weight: 800;
+}
+
+.keterangan {
+  display: none;
+  border: dashed 1px;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.footer {
+  display: flex;
+    justify-content: flex-start;
+  padding: 15px 20px
+}
+
+.footer-text {
+  text-decoration: none;
+  color: rgba(40, 40, 40, 0.8);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  transition: all 0.5;
+}
+
+.footer-text:hover {
+  color: rgba(40, 40, 40, 1);
+}
+
+  /* Style for Radio */
+  .jeniskelamin .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    /* margin-bottom: 12px; */
+    margin-top: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default radio button */
+  .jeniskelamin .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #cfcfcf;
+    border-radius: 50%;
+  }
+
+ /* On mouse-over, add a grey background color */
+ .jeniskelamin .container:hover input ~ .checkmark {
+  background-color: #a7a6a6;
+}
+
+/* When the radio button is checked, add a green background */
+.jeniskelamin .container input:checked ~ .checkmark {
+  background-color: #285847;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.jeniskelamin .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+
